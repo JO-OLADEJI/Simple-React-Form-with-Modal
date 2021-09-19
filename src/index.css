@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(15deg, #8080804b, transparent);
+  height: 100vh;
+  overflow: hidden;
+}

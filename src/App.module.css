@@ -1,0 +1,16 @@
+.App {
+  font-family: cursive;
+  /* width: 40rem; */
+  /* margin: auto; */
+}
+
+.App > h1 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #808080;
+  transition: color .5s ease-in-out;
+}
+
+.App > h1:hover {
+  color: black;
+}
