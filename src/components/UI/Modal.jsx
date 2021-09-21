@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Button from './Button';
 import Card from './Card';
 import './UI.css';
 
-const Modal = (props) => {
+const Element = (props) => {
   return (
     <div className="Modal">
       <div 
@@ -24,6 +25,18 @@ const Modal = (props) => {
         </div>
       </Card>
     </div>
+  );
+}
+
+const Modal = (props) => {
+  return (
+    ReactDOM.createPortal(
+      <Element 
+        close={props.close}
+        data={props.data}
+      />,
+      document.getElementById('modal-and-nav')
+    )
   );
 }
 
